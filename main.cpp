@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 
-// Helper to convert vector to JSON string
+
 std::string vector_to_json(const std::vector<float>& vec) {
     std::ostringstream oss;
     oss << "[";
@@ -20,8 +20,6 @@ std::string vector_to_json(const std::vector<float>& vec) {
 int main() {
     std::cout << "[ABM Tech Present: NLP For Products Matching] \n";
     // 1. Load the FastText Model
-    // You need a pre-trained model. 'cc.en.300.bin' is a common one, 
-    // or you can train your own on building materials text.
     std::cout << "Loading AI Model..." << std::endl;
     fasttext::FastText ft;
     try {
